@@ -1,0 +1,121 @@
+// COLOUR //
+$Amaranth_Purple: #AB2346;
+$Eerie_Black: #191516;
+$Jungle_Green: #00B295;
+$Fluorescent_Blue: #03F7EB;
+$Fluorescent_Blue_Alpha: rgba(3, 247, 235, 0.1);
+$Beau_Blue: #C9DAEA;
+
+// FONTS //
+$font_Bold: bold;
+$Center_Align: center;
+
+@mixin blackbox {
+    background-color: $Eerie_Black;
+    font-weight: $font_Bold;   
+}
+
+@mixin fluorescentbox {
+    background-color: $Fluorescent_Blue_Alpha;
+    font-weight: $font_Bold;
+    color: $Eerie_Black;    
+}
+
+@mixin nopadding {
+    padding: 0;
+    margin: 0;    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    @include nopadding;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: $Center_Align;
+    align-items: $Center_Align;
+    background-color: $Fluorescent_Blue_Alpha;
+    text-align: $Center_Align;
+    color: $Beau_Blue;
+    font-size: 1.5em;
+}
+
+.container {
+    width: 700px;
+    max-width: 70%;
+    border: 15px solid $Eerie_Black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px $Fluorescent_Blue;
+}
+
+.btn {
+    color: $Beau_Blue;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+
+.top-display {
+    padding: 30px 0;
+}
+
+.col-3, .col-9 {
+    @include nopadding;
+} 
+
+.btn-block.btn-block {
+    margin-top: 0;
+}
+
+.bottom-display {
+    padding: 20px 0;
+}
+
+.num-btn {
+    background-color: $Jungle_Green;
+    font-weight: $font_Bold;
+    border: 2px solid $Beau_Blue;
+}
+
+.opperand-btn {
+    background-color: $Amaranth_Purple;
+    font-weight: $font_Bold;
+    border: 2px solid $Eerie_Black;
+}
+
+.action-btn {
+    @include fluorescentbox;
+}
+
+#clear {
+    background-color: $Fluorescent_Blue;
+    font-weight: $font_Bold;
+    color: $Eerie_Black;
+    border: 2px solid $Eerie_Black;
+
+}
+
+#equals {
+    background-color: $Beau_Blue;
+    font-weight: $font_Bold;
+    color: $Eerie_Black;
+}
+
+#display {
+    @include blackbox;
+}
+
+#secondaryDisplay {
+    @include fluorescentbox;
+    border: 2px solid $Eerie_Black;
+}
+
+@media (max-width: 572px) {
+    .container {
+        width: 700px;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,108 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(3, 247, 235, 0.1);
+  text-align: center;
+  color: #C9DAEA;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 700px;
+  max-width: 70%;
+  border: 15px solid #191516;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 8px #03F7EB;
+          box-shadow: 5px 5px 8px #03F7EB;
+}
+
+.btn {
+  color: #C9DAEA;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 1.1em;
+}
+
+.top-display {
+  padding: 30px 0;
+}
+
+.col-3, .col-9 {
+  padding: 0;
+  margin: 0;
+}
+
+.btn-block.btn-block {
+  margin-top: 0;
+}
+
+.bottom-display {
+  padding: 20px 0;
+}
+
+.num-btn {
+  background-color: #00B295;
+  font-weight: bold;
+  border: 2px solid #C9DAEA;
+}
+
+.opperand-btn {
+  background-color: #AB2346;
+  font-weight: bold;
+  border: 2px solid #191516;
+}
+
+.action-btn {
+  background-color: rgba(3, 247, 235, 0.1);
+  font-weight: bold;
+  color: #191516;
+}
+
+#clear {
+  background-color: #03F7EB;
+  font-weight: bold;
+  color: #191516;
+  border: 2px solid #191516;
+}
+
+#equals {
+  background-color: #C9DAEA;
+  font-weight: bold;
+  color: #191516;
+}
+
+#display {
+  background-color: #191516;
+  font-weight: bold;
+}
+
+#secondaryDisplay {
+  background-color: rgba(3, 247, 235, 0.1);
+  font-weight: bold;
+  color: #191516;
+  border: 2px solid #191516;
+}
+
+@media (max-width: 572px) {
+  .container {
+    width: 700px;
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
